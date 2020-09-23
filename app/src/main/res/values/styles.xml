@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Скругление низних углов CardView -->
+    <style name="MyCardViewTop" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.Cut</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MaterialCardView.Cut" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeBottomRight">25dp</item>
+        <item name="cornerSizeBottomLeft">25dp</item>
+    </style>
+
+    <!--Скругление всех углов CardView -->
+    <style name="MyCardViewAll" parent="@style/Widget.MaterialComponents.CardView">
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay.MaterialCardView.CutAll</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay.MaterialCardView.CutAll" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">25dp</item>
+        <item name="cornerSizeTopRight">25dp</item>
+        <item name="cornerSizeBottomRight">25dp</item>
+        <item name="cornerSizeBottomLeft">25dp</item>
+    </style>
+
+    <!--Зеленый ProgressBar -->
+    <style name="greenProgressBar" parent="@android:style/Widget.SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressBackgroundTint">#00DD1111</item>
+        <item name="android:progressTint">@color/progressBarColorTintGreen</item>
+        <item name="android:minHeight">8dp</item>
+        <item name="android:maxHeight">20dp</item>
+    </style>
+
+    <!--Красный ProgressBar -->
+    <style name="redProgressBar" parent="@android:style/Widget.SeekBar">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressBackgroundTint">#003700B3</item>
+        <item name="android:progressTint">@color/progressBarColorTintRed</item>
+        <item name="android:minHeight">8dp</item>
+        <item name="android:maxHeight">20dp</item>
+    </style>
+
+
+</resources>
