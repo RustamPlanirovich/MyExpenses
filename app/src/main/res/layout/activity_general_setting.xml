@@ -12,7 +12,8 @@
         tools:context=".GeneralSetting">
 
 
-        <com.google.android.material.card.MaterialCardView
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
             android:id="@+id/ThemeCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -20,7 +21,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.CutAll">
+            app:neumorph_shapeType="flat">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -50,9 +51,10 @@
                     app:layout_constraintTop_toBottomOf="@id/themes" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </soup.neumorphism.NeumorphCardView>
 
-        <com.google.android.material.card.MaterialCardView
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
             android:id="@+id/CurrencyCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -60,7 +62,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/ThemeCardView"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.CutAll">
+            app:neumorph_shapeType="flat">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -90,9 +92,10 @@
                     app:layout_constraintTop_toBottomOf="@id/currency" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </soup.neumorphism.NeumorphCardView>
 
-        <com.google.android.material.card.MaterialCardView
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
             android:id="@+id/passwordCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -100,7 +103,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/CurrencyCardView"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.CutAll">
+            app:neumorph_shapeType="flat">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -130,9 +133,10 @@
                     app:layout_constraintTop_toBottomOf="@id/password" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </soup.neumorphism.NeumorphCardView>
 
-        <com.google.android.material.card.MaterialCardView
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
             android:id="@+id/fingerprintCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -140,7 +144,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/passwordCardView"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.CutAll">
+            app:neumorph_shapeType="flat">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -178,9 +182,10 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </soup.neumorphism.NeumorphCardView>
 
-        <com.google.android.material.card.MaterialCardView
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
             android:id="@+id/languageCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -188,7 +193,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/fingerprintCardView"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.CutAll">
+            app:neumorph_shapeType="flat">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -218,9 +223,10 @@
                     app:layout_constraintTop_toBottomOf="@id/language" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </soup.neumorphism.NeumorphCardView>
 
-        <com.google.android.material.card.MaterialCardView
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
             android:id="@+id/synchronizationCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -228,7 +234,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/languageCardView"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.CutAll">
+            app:neumorph_shapeType="flat">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -258,9 +264,10 @@
                     app:layout_constraintTop_toBottomOf="@id/synchronization" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </soup.neumorphism.NeumorphCardView>
 
-        <com.google.android.material.card.MaterialCardView
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
             android:id="@+id/sortCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -268,7 +275,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/synchronizationCardView"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.CutAll">
+            app:neumorph_shapeType="flat">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -298,9 +305,10 @@
                     app:layout_constraintTop_toBottomOf="@id/sort" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </soup.neumorphism.NeumorphCardView>
 
-        <com.google.android.material.card.MaterialCardView
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
             android:id="@+id/summCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -308,7 +316,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/sortCardView"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.CutAll">
+            app:neumorph_shapeType="flat">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -338,9 +346,10 @@
                     app:layout_constraintTop_toBottomOf="@id/summ" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </soup.neumorphism.NeumorphCardView>
 
-        <com.google.android.material.card.MaterialCardView
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
             android:id="@+id/optionCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -348,7 +357,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/summCardView"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.CutAll">
+            app:neumorph_shapeType="flat">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -378,9 +387,10 @@
                     app:layout_constraintTop_toBottomOf="@id/option" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </soup.neumorphism.NeumorphCardView>
 
-        <com.google.android.material.card.MaterialCardView
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
             android:id="@+id/autoLocationCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -388,7 +398,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/optionCardView"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.CutAll">
+            app:neumorph_shapeType="flat">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -427,9 +437,10 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </soup.neumorphism.NeumorphCardView>
 
-        <com.google.android.material.card.MaterialCardView
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
             android:id="@+id/calculatorCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -437,7 +448,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/autoLocationCardView"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.CutAll">
+            app:neumorph_shapeType="flat">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -477,9 +488,10 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </soup.neumorphism.NeumorphCardView>
 
-        <com.google.android.material.card.MaterialCardView
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
             android:id="@+id/shakongCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -487,7 +499,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/calculatorCardView"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.CutAll">
+            app:neumorph_shapeType="flat">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -527,9 +539,10 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </soup.neumorphism.NeumorphCardView>
 
-        <com.google.android.material.card.MaterialCardView
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
             android:id="@+id/currencynumberCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -537,7 +550,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/shakongCardView"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.CutAll">
+            app:neumorph_shapeType="flat">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -565,9 +578,10 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </soup.neumorphism.NeumorphCardView>
 
-        <com.google.android.material.card.MaterialCardView
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
             android:id="@+id/autosetCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -575,7 +589,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/currencynumberCardView"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.CutAll">
+            app:neumorph_shapeType="flat">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -603,9 +617,10 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </soup.neumorphism.NeumorphCardView>
 
-        <com.google.android.material.card.MaterialCardView
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
             android:id="@+id/balsCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -613,7 +628,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/autosetCardView"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.CutAll">
+            app:neumorph_shapeType="flat">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -641,9 +656,10 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </soup.neumorphism.NeumorphCardView>
 
-        <com.google.android.material.card.MaterialCardView
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
             android:id="@+id/groupcartCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -651,7 +667,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/balsCardView"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.CutAll">
+            app:neumorph_shapeType="flat">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -691,9 +707,10 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </soup.neumorphism.NeumorphCardView>
 
-        <com.google.android.material.card.MaterialCardView
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
             android:id="@+id/budgitCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -701,7 +718,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/groupcartCardView"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.CutAll">
+            app:neumorph_shapeType="flat">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -741,9 +758,10 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </soup.neumorphism.NeumorphCardView>
 
-        <com.google.android.material.card.MaterialCardView
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
             android:id="@+id/advancedCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -751,7 +769,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/budgitCardView"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.CutAll">
+            app:neumorph_shapeType="flat">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -791,9 +809,10 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </soup.neumorphism.NeumorphCardView>
 
-        <com.google.android.material.card.MaterialCardView
+        <soup.neumorphism.NeumorphCardView
+            style="@style/Widget.Neumorph.CardView"
             android:id="@+id/readNoticeCardView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -803,7 +822,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/advancedCardView"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.CutAll">
+            app:neumorph_shapeType="flat">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -831,7 +850,7 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-        </com.google.android.material.card.MaterialCardView>
+        </soup.neumorphism.NeumorphCardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

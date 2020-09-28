@@ -63,13 +63,13 @@ class MainActivity : AppCompatActivity() {
         /*Инициализируем MoneyConvert который отвечает за формирование строки
         * с буквой валюты*/
         val money = MoneyConvert()
-        choiceTheme = ChoiceTheme(context)
+        choiceTheme = ChoiceTheme(context as MainActivity)
         choiceTheme.loadStateRadioButton()
         /*Инициализирем метод views в котором происходит включение
         * выключение видимости элементов главного экрана*/
-        views()
-        prefs = getSharedPreferences("settings", Context.MODE_PRIVATE)
 
+        prefs = getSharedPreferences("settings", Context.MODE_PRIVATE)
+        views()
         /*Инициализация меню и его работа*/
         val popupMenu = PopupMenu(this, menu)
         popupMenu.inflate(menu_main)
@@ -146,11 +146,11 @@ class MainActivity : AppCompatActivity() {
                     ) {
                         //scroll view is at bottom
                         addСheckButton.hide()
-                        bottom_appbar.performHide()
+
                     } else {
                         //scroll view is not at bottom
                         addСheckButton.show()
-                        bottom_appbar.performShow()
+
                     }
                 }
             }
@@ -219,8 +219,7 @@ class MainActivity : AppCompatActivity() {
                 progressBar2,
                 purchases.sumBy(PurchasesTable::summ)
             )
-            chip4.text =
-                "Всего открытых счетов: " + purchases.sumBy(PurchasesTable::summ).toString()
+
         })
 
 

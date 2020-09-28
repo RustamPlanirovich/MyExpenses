@@ -13,6 +13,17 @@
         tools:context=".MainActivity">
 
 
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/addСheckButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_baseline_add_24" />
+
         <ScrollView
             android:id="@+id/scrollView"
             android:layout_width="match_parent"
@@ -55,6 +66,7 @@
                     android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toTopOf="@+id/include4"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/include2" />
 
@@ -123,54 +135,4 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/bottom_appbar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        app:fabAlignmentMode="end"
-        app:backgroundTint="#6A00010B" >
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="top"
-        android:weightSum="5"
-        android:paddingEnd="16dp">
-
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            app:srcCompat="@drawable/app_icon"
-            android:background="?attr/selectableItemBackgroundBorderless" />
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            app:srcCompat="@drawable/app_icon"
-            android:background="?attr/selectableItemBackgroundBorderless"/>
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            app:srcCompat="@drawable/app_icon"
-            android:background="?attr/selectableItemBackgroundBorderless"/>
-        <ImageButton
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_margin="10dp"
-            app:srcCompat="@drawable/app_icon"
-            android:background="?attr/selectableItemBackgroundBorderless"/>
-
-    </LinearLayout>
-    </com.google.android.material.bottomappbar.BottomAppBar>
-
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/addСheckButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:fabSize="mini"
-        app:layout_anchor="@id/bottom_appbar"
-        app:layout_anchorGravity="center_horizontal"
-        app:srcCompat="@drawable/ic_baseline_add_24" />
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

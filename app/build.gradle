@@ -91,5 +91,8 @@ dependencies {
     //Круговая диаграмма
     implementation("app.futured.donut:library-compose:2.0.0")
 
+    //Neumorphism
+    implementation 'com.github.fornewid:neumorphism:0.2.1'
+
 
 }

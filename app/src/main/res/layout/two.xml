@@ -15,17 +15,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.card.MaterialCardView
-        android:id="@+id/second"
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/flat_card"
+        style="@style/Widget.Neumorph.CardView"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_marginStart="10dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/creditCard"
-        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.MaterialCardView.CutAll">
+        app:neumorph_shapeType="flat">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -44,22 +43,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:text="Открытые счета" />
 
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chip6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginRight="10dp"
-                    android:layout_weight="1"
-                    android:text="Закрытые счета" />
             </LinearLayout>
 
             <ProgressBar
@@ -77,20 +61,10 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/chipGroup" />
 
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chip4"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:layout_marginEnd="8dp"
-                android:clickable="false"
-                android:text="Всего открытых счетов:"
-                app:chipIcon="@drawable/app_icon"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </com.google.android.material.card.MaterialCardView>
+    </soup.neumorphism.NeumorphCardView>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

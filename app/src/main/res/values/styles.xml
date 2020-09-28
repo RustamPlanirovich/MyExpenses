@@ -1,11 +1,18 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <style name="Platform.Theme.Neumorphism" parent="Theme.Neumorph.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/status_bar_scrim</item>
+        <item name="android:navigationBarColor">@color/nav_bar_scrim</item>
+    </style>
+
+    <style name="AppTheme" parent="Platform.Theme.Neumorphism">
+        <item name="colorPrimary">@color/background</item>
+        <item name="colorPrimaryDark">@color/background</item>
+        <item name="colorAccent">@color/color_accent</item>
+
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:navigationBarColor">@color/background</item>
     </style>
 
     <!--Скругление низних углов CardView -->
@@ -36,7 +43,7 @@
     <style name="greenProgressBar" parent="@android:style/Widget.SeekBar">
         <item name="android:indeterminateOnly">false</item>
         <item name="android:progressBackgroundTint">#00DD1111</item>
-        <item name="android:progressTint">@color/progressBarColorTintGreen</item>
+        <item name="android:progressTint">#07F40A</item>
         <item name="android:minHeight">8dp</item>
         <item name="android:maxHeight">20dp</item>
     </style>
@@ -45,7 +52,7 @@
     <style name="redProgressBar" parent="@android:style/Widget.SeekBar">
         <item name="android:indeterminateOnly">false</item>
         <item name="android:progressBackgroundTint">#003700B3</item>
-        <item name="android:progressTint">@color/progressBarColorTintRed</item>
+        <item name="android:progressTint">#F10404</item>
         <item name="android:minHeight">8dp</item>
         <item name="android:maxHeight">20dp</item>
     </style>
