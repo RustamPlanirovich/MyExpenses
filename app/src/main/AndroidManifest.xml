@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GeneralSetting"></activity>
+        <activity android:name=".Scores"/>
+        <activity android:name=".GeneralSetting" />
         <activity android:name=".PanelSetting" />
         <activity android:name=".MainActivity" />
         <activity android:name=".SpleshActivity">

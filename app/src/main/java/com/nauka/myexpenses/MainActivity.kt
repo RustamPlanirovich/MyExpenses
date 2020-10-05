@@ -11,7 +11,6 @@ import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.view.Window
 import android.widget.PopupMenu
-import android.widget.RadioButton
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
@@ -24,19 +23,17 @@ import com.nauka.myexpenses.AllEntity.PurchasesTable
 import com.nauka.myexpenses.AllViewModel.PurchasesTableViewModel
 import com.nauka.myexpenses.Fragments.AddCheckFragment
 import com.nauka.myexpenses.ProgressBar.PercentProgressBar
-import com.nauka.myexpenses.R.layout.activity_main
-import com.nauka.myexpenses.R.layout.delete_dialog
+import com.nauka.myexpenses.R.id.*
+import com.nauka.myexpenses.R.layout.*
+import com.nauka.myexpenses.R.menu.menu_main
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.choice_of_subject.*
 import kotlinx.android.synthetic.main.delete_dialog.view.*
 import kotlinx.android.synthetic.main.first.*
 import kotlinx.android.synthetic.main.five.*
 import kotlinx.android.synthetic.main.third.*
-import kotlinx.android.synthetic.main.two.*
 import org.jetbrains.anko.doAsync
-import com.nauka.myexpenses.R.layout.*
-import com.nauka.myexpenses.R.menu.*
-import com.nauka.myexpenses.R.id.*
-import kotlinx.android.synthetic.main.choice_of_subject.*
+import java.util.*
 
 
 class MainActivity : AppCompatActivity() {
@@ -46,9 +43,11 @@ class MainActivity : AppCompatActivity() {
     private lateinit var viecomponent: ViewComponent
     private lateinit var choiceTheme: ChoiceTheme
     private lateinit var prefs: SharedPreferences
+    private lateinit var alertDialog:Dialog
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(activity_main)
+        alertDialog = Dialog(this)
         //Скрываем ActionBar
         supportActionBar?.hide()
         //получаем Context MainActivity
@@ -70,6 +69,8 @@ class MainActivity : AppCompatActivity() {
 
         prefs = getSharedPreferences("settings", Context.MODE_PRIVATE)
         views()
+
+
         /*Инициализация меню и его работа*/
         val popupMenu = PopupMenu(this, menu)
         popupMenu.inflate(menu_main)
@@ -81,8 +82,7 @@ class MainActivity : AppCompatActivity() {
                     true
                 }
                 darkmode -> {
-                    val alertDialog = Dialog(this)
-                    alertDialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
+                    //alertDialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
                     alertDialog.setContentView(choice_of_subject)
                     alertDialog.getWindow()?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
 
@@ -91,9 +91,9 @@ class MainActivity : AppCompatActivity() {
                     val black = alertDialog.black
                     val system = alertDialog.system
 
-//                    white.isChecked = choiceTheme.white()
-//                    black.isChecked = choiceTheme.black()
-//                    system.isChecked = choiceTheme.system()
+                    white.isChecked = choiceTheme.white()
+                    black.isChecked = choiceTheme.black()
+                    system.isChecked = choiceTheme.system()
 
                     white.setOnClickListener {
                         choiceTheme.saveStateRadioButton(
@@ -203,10 +203,11 @@ class MainActivity : AppCompatActivity() {
                 doAsync { model.allPurchasesTable }
             }, del = context as MainActivity)
         })*/
-
-        model.allToday.observe(this, androidx.lifecycle.Observer { purchasesTable ->
+        var calendar = Calendar.getInstance()
+        var currentDate = calendar!!.get(Calendar.DAY_OF_MONTH)
+        model.allToday(currentDate).observe(this, androidx.lifecycle.Observer { purchasesTable ->
             recyclerView.adapter = PurchasesViewAdapter(purchasesTable, onCardClick = {
-                doAsync { model.allToday }
+                doAsync { model.allToday(currentDate) }
             }, del = context as MainActivity)
         })
 
@@ -226,12 +227,16 @@ class MainActivity : AppCompatActivity() {
 
 
 
-        model.allToday.observe(this, androidx.lifecycle.Observer { purchasesTable ->
+        model.allToday(currentDate).observe(this, androidx.lifecycle.Observer { purchasesTable ->
             recyclerView.adapter = PurchasesViewAdapter(purchasesTable, onCardClick = {
                 delAlertDialog(it)
                 //doAsync { model.delete(it) }
             }, del = context as MainActivity)
         })
+
+        include6.setOnClickListener {
+            startActivity(Intent(this,Scores::class.java))
+        }
 
     }
 
@@ -278,6 +283,11 @@ class MainActivity : AppCompatActivity() {
     override fun onResume() {
         super.onResume()
         views()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        alertDialog.dismiss()
     }
 
 }

@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
+import android.os.Looper
 import kotlinx.android.synthetic.main.activity_main.view.*
 
 class SpleshActivity : AppCompatActivity() {
@@ -12,9 +13,10 @@ class SpleshActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splesh)
         supportActionBar?.hide()
 
-        Handler().postDelayed({
+        Handler(Looper.myLooper()!!).postDelayed({
             startActivity(Intent(this,MainActivity::class.java))
             finish()
         },3000)
+
     }
 }

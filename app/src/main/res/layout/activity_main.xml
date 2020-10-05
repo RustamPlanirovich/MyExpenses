@@ -24,6 +24,9 @@
             app:layout_constraintStart_toStartOf="parent"
             app:srcCompat="@drawable/ic_baseline_add_24" />
 
+
+
+
         <ScrollView
             android:id="@+id/scrollView"
             android:layout_width="match_parent"
@@ -50,7 +53,6 @@
                     layout="@layout/two"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
                     android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toTopOf="@+id/include3"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -62,7 +64,6 @@
                     layout="@layout/third"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
                     android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toTopOf="@+id/include4"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -75,7 +76,6 @@
                     layout="@layout/four"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
                     android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toTopOf="@+id/include5"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -87,7 +87,6 @@
                     layout="@layout/five"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
                     android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toTopOf="@+id/include6"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -99,7 +98,6 @@
                     layout="@layout/six"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
                     android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toTopOf="@+id/include7"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -111,7 +109,6 @@
                     layout="@layout/seven"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
                     android:layout_marginBottom="8dp"
                     app:layout_constraintBottom_toTopOf="@+id/include8"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -123,7 +120,6 @@
                     layout="@layout/eight"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="16dp"
                     android:layout_marginBottom="24dp"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"

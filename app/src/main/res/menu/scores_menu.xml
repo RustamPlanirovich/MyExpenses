@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/Checkbook"
+        android:title="Чековая книжка"/>
+    <item
+        android:id="@+id/Cash"
+        android:title="Наличные"/>
+    <item
+        android:id="@+id/Nuphar"
+        android:title="Кубышка"/>
+    <item
+        android:id="@+id/Investment"
+        android:title="Инвестиции"/>
+    <item
+        android:id="@+id/Etc"
+        android:title="Прочее" />
+</menu>
